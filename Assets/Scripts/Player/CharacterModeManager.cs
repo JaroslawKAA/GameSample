@@ -64,7 +64,7 @@ public class CharacterModeManager : MonoBehaviour
 
     private void Awake()
     {
-        //Konstructors of the game mode's.
+        //Constructors of the game mode's.
         movementMode = new MovementMode(this);
         idleMode = new IdleMode(this);
         jumpMode = new JumpMode(this);
