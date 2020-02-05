@@ -118,7 +118,7 @@ public class CharacterModeManager : MonoBehaviour
     /// </summary>
     void ReturnColliderInPreviousWeapon()
     {
-        if (previousWeapon != null)
+        if (previousWeapon != null && previousWeapon.GetComponent<SphereCollider>().enabled == false)
         {
             float distance = Vector3.Distance(previousWeapon.transform.position, transform.position);
             if (distance > 2)
